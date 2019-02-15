@@ -45,11 +45,6 @@ public class CouchbaseServiceRegistryTests extends AbstractServiceRegistryTests 
         super(registeredServiceClass);
     }
 
-    @Parameterized.Parameters
-    public static Collection<Object> getTestParameters() {
-        return Collections.singletonList(RegexRegisteredService.class);
-    }
-
     @Override
     public ServiceRegistry getNewServiceRegistry() {
         return this.serviceRegistry;
